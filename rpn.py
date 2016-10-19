@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import operator
-
+from termcolor import colored, cprint
 
 operators = {
 	'+': operator.add,
@@ -29,8 +29,9 @@ def calculate(myarg):
 	return stack.pop()
 
 def main():
+	text = colored('rpn calc> ', 'cyan', attrs=['reverse', 'blink'])
 	while True:
-		result = calculate(input("rpn calc> "))
+		result = calculate(input(text))
 		print("Result: ", result)
 
 if __name__ == '__main__':
