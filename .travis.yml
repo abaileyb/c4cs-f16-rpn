@@ -4,6 +4,6 @@ install:
   - pip install coverage
 python:
   - "2.6"
-script: make
+script: coverage run test_rpn.py
 after_success:
   - coveralls
