@@ -2,6 +2,7 @@ language: python
 install:
   - pip install python-coveralls
   - pip install coverage
+  - pip install termcolor
 python:
   - "2.6"
 script: coverage run --source=test_rpn.py rpn.py
