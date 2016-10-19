@@ -1,3 +1,2 @@
 service_name: travis-ci
 repo_token: chPDbpwYAktZA6cDAEkwSOotx8BgDNUSl
-parallel: true
